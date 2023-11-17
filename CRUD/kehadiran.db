@@ -1,0 +1,8 @@
+CREATE TABLE presensi (
+    nim INT PRIMARY KEY,
+    nama VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    kehadiran ENUM('hadir', 'izin') NOT NULL,
+    bukti_kehadiran VARCHAR(255) NOT NULL,
+    waktu_ditambahkan DATETIME
+);
